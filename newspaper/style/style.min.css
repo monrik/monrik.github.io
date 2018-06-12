@@ -145,7 +145,7 @@ input#checkBox:checked:before{content:"";display:block;width:9px;height:14px;bor
 .newspaper1__box-shadow__icon a img{width:27px;height:26px}
 .newspaper1__time{position:absolute;right:0;bottom:-65px;left:0;height:60px;overflow:hidden;text-align:left;font-family:Bitter;color:#961d1d;font-size:12px;font-weight:400;line-height:18px;letter-spacing:.24px}
 .newspaper1__desc{position:absolute;right:0;bottom:-79px;left:0;height:60px;overflow:hidden;text-align:left;color:#961d1d;font-family:Bitter;font-size:12px;font-weight:400;line-height:18px;letter-spacing:.24px}
-.newspaper1__text{position:absolute;height:87px;line-height:13.36px;width:227px;top:182px;font-size:12px;font-weight:400;font-family:Bitter}
+.newspaper1__text{position:absolute;height:87px;line-height:13.36px;width:227px;top:194px;font-size:12px;font-weight:400;font-family:Bitter}
 .social{background-color:#212121;height:100px}
 .social-icon{text-align:center;padding-top:31px}
 .corp{background-color:#494949;height:42px}
