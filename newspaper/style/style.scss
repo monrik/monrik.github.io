@@ -1,0 +1,978 @@
+$white:#ffffff;
+$dark-gray: #212121;
+$font-family:"Baskerville";
+    
+body{
+    padding: 0;
+    margin: 0;
+    background: url(../img/bg.png);
+}
+header{
+    background-image: url('../img/bg-red.png');
+    width: 100%;
+    height: 117px;
+    color: $white;
+}
+
+.container{
+    width: 100%;
+    max-width: 1233px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    &__logo{
+        display: flex;
+        img{
+            padding-top: 12px;
+            width: 87px;
+            height: 87px;
+        }
+        p{
+           display: inline;
+            width: 253px;
+            height: 40px;
+            color:$white ;
+            font-family: Baskerville;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+            text-transform: uppercase;
+            letter-spacing: 0.36px;
+            margin-left: 20px;
+            margin-top: 32px;
+        }
+    }
+    &__btn{
+        margin-top: 45px;
+        a{
+            padding: 21px 19px 16px 19px;
+            white-space: nowrap;
+            width: 162px;
+            height: 13px;
+            color: $white;
+            font-family: Bitter;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 28px;
+            text-transform: uppercase;
+            letter-spacing: 0.28px;
+            text-decoration: none;
+            border: 2px solid $white;
+            border-radius: 2px;
+            margin-right: 38px;
+        }
+    }
+    &__soc{
+        padding-top: 16px;
+        &__lang{
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown span {
+                font-size: 12px;
+                font-family: "Bitter-Bold";
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                width: 60px;
+            }
+            .dropbtn
+            {
+              padding-left: 25px;
+              width: 40px;
+              display: flex;
+              align-items: flex-end;
+              justify-content: space-between;
+                font-family: Bitter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28px;
+                text-transform: uppercase;
+                letter-spacing: 0.32px;
+            }
+            .dropdown-content >a {
+                color: #393939;
+                padding: 2px 0 2px 20px;
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown-content a:hover {
+                background-color: #f1f1f1
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .registration{
+                display:inline; 
+                margin-left: 25px;
+                a{
+                    color:$white;
+                    font-family: Bitter;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    letter-spacing: 0.32px;
+                    text-decoration: none;
+                }
+            }
+        }
+        &__all{
+            padding-top: 16px;
+        }
+    }
+}.navigation{
+    height: 46px;
+    background-color:$dark-gray;
+}
+.nav{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 10px;
+    li{
+        display: inline;
+        list-style: none;
+        padding-right: 32px;
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $white;
+            font-family: Bitter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.32px;
+        }
+    }
+
+}
+
+
+.news{
+    margin-top: 10px;
+    height: 512px;
+    background: #393939;
+    display: flex;
+    &__block{
+        &__nav{
+            &__search{
+                width: 402px;
+                height: 102px;
+                background-color: #212121;
+                input{
+                    margin-top: 26px;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    width: 272px;
+                    height: 44px;
+                    background-color:$white;
+                    border: none;
+                    border-radius: 8px;
+                }
+                input:focus{
+                    outline:none;
+                }
+                img{
+                    vertical-align: -12px;
+                }
+                
+            }
+        }
+        &__info{
+            &__item{
+                padding: 0;
+                margin: 0;
+                li{
+                    width: 402px;
+                    height: 102px;
+                    list-style: none;
+                    background-color: #212121;
+                    background-image: linear-gradient(to top, #212121 0%, #303030 100%);
+                    a{
+                        text-decoration: none;
+                        color: $white;
+                        font-family: Baskerville;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 28px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.4px;
+                        display: flex;
+                        justify-content: space-around;
+                        padding-top: 25px;
+                        padding-left: 75px;
+    
+                    }
+                
+                }
+            }
+        }
+    }
+    
+}
+.news-img{
+    background-image: url('../img/000109.png');
+    height: 512px;
+    width: 830px;
+    position: relative;
+
+    p{
+        width: 721px;
+        height: 61px;
+        color: $white;
+        font-family: Bitter;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.32px;
+        line-height: 22px;
+        letter-spacing: 0.32px;
+        line-height: 24px;
+        position: relative;
+        top: 413px;
+        padding-left: 77px;
+       
+    } 
+    .shadow{
+        background-color: #000000;
+        opacity: 0.5;
+        width: 830px;
+        height: 87px;
+        position:absolute;
+        bottom: 0;
+    }   
+
+}
+.listandpaper{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.list{
+    width: 400px;
+    height: 391px;
+    border: 2px solid #212121;
+    background-color: #212121;
+    img{
+        width: 366px;
+        height: 177px;
+        position: relative;
+        left: 17px;
+        top: 13px;
+    }
+    .box-shadow1{
+        width: 366px;
+        height: 44px;
+        background-color: #000000;
+        opacity: 0.72;
+        position: relative;
+        bottom: 33px;
+        left: 17px;
+    }
+    &__news{
+        position: relative;
+        bottom: 81px;
+        left: 34px;
+
+        a{
+            font-family: Bitter;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.24px;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
+.icon{
+    display: inline;
+    vertical-align: super;
+    margin-left: 72px;
+    a{
+        img{
+            width: 27px;
+            height: 26px;
+        }
+    }
+
+}
+.formnews{
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto;
+    &__text{
+        width: 351px;
+        height: 43px;
+        border: none;
+        border-radius: 4px;
+        outline: none;
+        padding-left: 19px;
+        color: $dark-gray;
+        font-family: Baskerville;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.36px;
+
+    }
+    &__email{
+        height: 43px;
+        width: 351px;
+        border: none;
+        border-radius: 4px;
+        padding-left: 19px;
+        outline: none;
+        color: $dark-gray;
+        font-family: Baskerville;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.36px;
+    }
+}
+
+.breadcrumb-main {
+    font-size: 18px;
+}
+
+.breadcrumb {
+    list-style: none;
+}
+.breadcrumb-item{
+    display: inline;
+}
+.breadcrumb-main .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    content: "/";
+}
+.breadcrumb-main > li {
+    font-family: Bitter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.35px;
+}
+.breadcrumb-main > li > a {
+    -webkit-transition: 0.3s;
+    text-decoration:none;
+    color: $dark-gray;
+    transition: 0.3s;
+    font-family: Bitter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.35px;
+}
+.breadcrumb-main > li > a:hover{
+    color: #93020D;
+}
+
+.breadcrumb::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.videoblog{
+    background-image: url('../img/bg-red.png');
+    height: 64px;
+    &__all{
+        padding-top: 17px;
+        a{
+            width: 49px;
+            height: 18px;       
+            color: $white;
+            font-family: Bitter;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: -0.4px;
+            text-decoration: none;
+            img{
+                width: 28px;
+                height: 18px;
+                transform: scale(-1, -1);
+                padding-left: 13px;
+                padding-right: 35px; 
+                 vertical-align: -3px;
+                
+            }
+    
+        }
+        p{
+            display:inline;
+            color: $white;
+            font-family: Baskerville;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+            text-transform: uppercase;
+            letter-spacing: 0.36px;
+            padding-left: 392px;
+        }
+
+    }
+    
+
+}
+
+.video {
+    max-width: 1233px;
+    text-align: justify;
+    margin: 0 auto; //после auto можно поставить нижний отрицательный margin, если нижний отступ в 40рх у внутренних блоков будет великоват
+    padding: 20px 0px 0;
+    font-size: 0; //чтоб after имел нулевую высоту. Если нужен IE9, то меняем эти 2 пункта на 1px
+    line-height: 0;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+    &__item {
+      width: 100%; //блок на всю ширину
+      margin-bottom: 120px; //80 под текст (60+20) и 40 как отступ между блоками по вертикали
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      @media (min-width: 768px) {       //на планшете 2 блока в ширину. Даже можно с 640 так сделать, а не с 768, для горизонтального просмотра на мобилках
+        width: 48%;
+      }
+      @media (min-width: 1024px) {       //на компе 3 блока в ширину
+        width: 30%;
+      }
+      &:before {
+        content: '';
+        padding-top: 56.34%; //это отношение высоты видео к его ширине
+        float: left;
+      }
+      &:after {       //делаем clearfix, чтоб вернуть :before в поток
+        content: '';
+        clear: both;
+        display: table;
+      }
+    }
+    &__frame {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    &__desc {
+      position: absolute;
+      right: 0;
+      bottom: -80px;
+      left: 0;
+      height: 60px;
+      overflow: hidden;
+      text-align: left;
+      font-family: Bitter;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.36px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .post-pagination {
+	font-weight: bold;
+	padding: 0.8em 1em;
+	color: $dark-gray;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.post-pagination a {
+	padding: 0.6em 0.8em;
+	margin-right: 0.2em;
+	display: inline-block;
+    text-align: center;
+	text-decoration: none;
+    color: $dark-gray;
+    font-family: Bitter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.36px;
+}
+
+.post-pagination a:link, .post-pagination a:visited {
+	color: $dark-gray;
+}
+.post-pagination a:hover {
+	color: #95050e;
+
+}
+a.previous.page-numbers {
+    color: #95050e;
+}
+a.next.page-numbers {
+    color: #95050e;
+}
+.post-pagination .current {
+	padding: 0.5em 0.9em;
+	margin-right: 0.2em;
+	color: #95050e;
+}
+.send{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.message{
+    width: 64%;
+}
+.sendbtn{
+    width: 37%;
+    text-align: left;
+}
+.form_message {
+    display: flex;
+    justify-content: space-between;
+}
+.form_message>p {
+    width: 48%;
+}
+.form_message>p>input {
+    width: calc(100% - 24px);
+    padding: 9px 14px;
+    border: 1px solid #961d1d;
+    color: $dark-gray;
+    text-transform: uppercase;
+    font-family: Baskerville;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.36px;
+    outline: none;
+}
+.form_message>p>input:active{
+    outline: none;
+}
+.sendbtn{
+    width: 370px;
+    height: 62px;
+    margin-top: 16px;
+    text-align: center;
+    padding-top: 48px;
+    a{
+        background-color: #960510;
+        text-decoration: none;
+        color: $white;
+        font-family: Baskerville;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 0.36px;
+        padding: 49px 64px;
+        white-space: nowrap;
+        border: 1px solid;
+        border-radius: 6px;
+    }
+}
+
+.subscribe{
+    height: 81px;
+    border: 2px solid $dark-gray;
+    background-color: $dark-gray;
+    display: flex;
+    &__form{
+        input{
+            width: 355px;
+            height: 43px;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            margin-top: 19px;
+            font-family: "Baskerville";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.36px;
+            padding-left: 15px;
+            margin-left: 30px;
+        }
+    }
+    &__btn{
+        display: inline;
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 370px;
+        height: 43px;
+        a{
+            background-color: #960510;
+            color: $white;
+            font-family: $font-family;
+            text-decoration: none;
+            font-size:16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.36px;
+            white-space: nowrap;
+            padding: 14px 65px;
+            @media (max-width: 1100px) {       //на планшете 2 блока в ширину. Даже можно с 640 так сделать, а не с 768, для горизонтального просмотра на мобилках
+                padding: 14px 40px;
+            }
+        }
+    }
+}
+
+.newspaper {
+    max-width: 1170px;
+    text-align: justify;
+    margin: 0 auto; //после auto можно поставить нижний отрицательный margin, если нижний отступ в 40рх у внутренних блоков будет великоват
+    padding: 20px 0px 0;
+    font-size: 0; //чтоб after имел нулевую высоту. Если нужен IE9, то меняем эти 2 пункта на 1px
+    line-height: 0;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+    &__item {
+      width: 100%; //блок на всю ширину
+      margin-bottom: 120px; //80 под текст (60+20) и 40 как отступ между блоками по вертикали
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      @media (min-width: 768px) {       //на планшете 2 блока в ширину. Даже можно с 640 так сделать, а не с 768, для горизонтального просмотра на мобилках
+        width: 48%;
+      }
+      @media (min-width: 1024px) {       //на компе 3 блока в ширину
+        width: 24%;
+      }
+      &:before {
+        content: '';
+        padding-top: 56.34%; //это отношение высоты видео к его ширине
+        float: left;
+      }
+      &:after {       //делаем clearfix, чтоб вернуть :before в поток
+        content: '';
+        clear: both;
+        display: table;
+      }
+    }
+    &__img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #dadada;
+    }
+    &__box-shadow{
+        height: 44px;
+        background-color: #000000;
+        opacity: 0.72;
+        position: relative;
+        top: 113px;
+        &__icon{
+            display: inline;
+            position: absolute;
+            width: 100%;
+            text-align: right;
+            margin-top: 10px;
+            margin-left: -14px;
+            
+            a{
+                padding-left: 4px;
+                img{
+                    width: 27px;
+                    height: 26px;
+                }
+            }
+        }
+    }
+
+    &__desc {
+      position: absolute;
+      right: 0;
+      bottom: -65px;
+      left: 0;
+      height: 60px;
+      overflow: hidden;
+      text-align: left;
+      color: #961d1d;
+      font-family: "Bitter";
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.32px;
+    }
+    &__text{
+        position: absolute;
+        height: 87px;
+        line-height: 13.36px;
+        width: 227px;
+        top: 176px;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: "Bitter";
+    }  
+}
+
+
+.videoblog1{
+    background-image: url('../img/bg-red.png');
+    height: 64px;
+    &__all{
+        padding-top: 17px;
+        p{
+            display:inline;
+            color: $white;
+            font-family: Baskerville;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+            text-transform: uppercase;
+            letter-spacing: 0.36px;
+            padding-left: 558px;
+        }
+
+    }
+    
+}
+.sl{
+    &__desc{
+        font-family: "Bitter";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.36px;
+        width: 75%;
+    }
+}
+.slaider {
+    padding-left: 10px;
+    margin-top: 19px;
+    border-bottom: 1px solid #960510;
+}
+.slick-prev{
+    left: 24px;
+    top:-53px;
+}
+.slick-next {
+    right: 46px;
+    top: -53px;
+}
+.sl__slide.slick-slide {
+    outline: none;
+}
+.filter{
+    li{
+        list-style: none;
+        padding-bottom: 26px;
+        font-family: "Bitter";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.36px;
+    }
+}
+.rubrick{
+    display: flex;
+    margin-left: -10px;
+
+    &__left{
+        width: 25%;
+    }
+    &__right{
+        width: 75%;
+        border-left: 3px solid #8b0005;
+        margin-left: -30px;
+        padding-left: 30px;
+        &__text{
+            p{
+                color:$dark-gray;
+                font-family: "Bitter";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0.36px;
+                text-indent:40px;
+            }
+        }
+    }    
+}
+input#checkBox {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #8e8e8e;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-top: -1px;
+    -webkit-appearance: none;
+    outline: none;
+}
+input#checkBox:checked:before{
+    content: "";
+    display: block;
+    width: 9px;
+    height: 14px;
+    border: 0 solid #960510;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotateZ(45deg);
+    margin: -2px 4px;
+    pointer-events: none;
+}
+
+
+.newspaper1 {
+    max-width: 1170px;
+    text-align: justify;
+    margin: 0 auto; //после auto можно поставить нижний отрицательный margin, если нижний отступ в 40рх у внутренних блоков будет великоват
+    padding: 20px 0px 0;
+    font-size: 0; //чтоб after имел нулевую высоту. Если нужен IE9, то меняем эти 2 пункта на 1px
+    line-height: 0;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+    &__item {
+      width: 100%; //блок на всю ширину
+      margin-bottom: 120px; //80 под текст (60+20) и 40 как отступ между блоками по вертикали
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      @media (min-width: 768px) {       //на планшете 2 блока в ширину. Даже можно с 640 так сделать, а не с 768, для горизонтального просмотра на мобилках
+        width: 48%;
+      }
+      @media (min-width: 1024px) {       //на компе 3 блока в ширину
+        width: 32%;
+      }
+      &:before {
+        content: '';
+        padding-top: 56.34%; //это отношение высоты видео к его ширине
+        float: left;
+      }
+      &:after {       //делаем clearfix, чтоб вернуть :before в поток
+        content: '';
+        clear: both;
+        display: table;
+      }
+    }
+    &__img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #dadada;
+    }
+    &__box-shadow{
+        height: 44px;
+        background-color: #000000;
+        opacity: 0.72;
+        position: relative;
+        top: 113px;
+        &__icon{
+            display: inline;
+            position: absolute;
+            width: 100%;
+            text-align: right;
+            margin-top: 10px;
+            margin-left: -14px;
+            
+            a{
+                padding-left: 4px;
+                img{
+                    width: 27px;
+                    height: 26px;
+                }
+            }
+        }
+    }
+    &__time{
+        position: absolute;
+        right: 0;
+        bottom: -65px;
+        left: 0;
+        height: 60px;
+        overflow: hidden;
+        text-align: left;
+        font-family: "Bitter";
+        color: #961d1d;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.24px;
+    }
+    &__desc {
+      position: absolute;
+      right: 0;
+      bottom: -79px;
+      left: 0;
+      height: 60px;
+      overflow: hidden;
+      text-align: left;
+      color: #961d1d;
+      font-family: "Bitter";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.24px;
+    }
+
+    &__text{
+        position: absolute;
+        height: 87px;
+        line-height: 13.36px;
+        width: 227px;
+        top: 182px;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: "Bitter";
+    }  
+}
+
+
+
+.social{
+    background-color: $dark-gray;
+    height: 100px;
+}
+.social-icon {
+    text-align: center;
+    padding-top: 31px;
+}
+.corp{
+    background-color: #494949;
+    height: 42px;
+}
+.corp-text{
+    color: $white;
+    font-family: Baskerville;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.32px;
+    text-align: center;
+}
